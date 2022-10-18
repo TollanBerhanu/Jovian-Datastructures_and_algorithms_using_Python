@@ -1,6 +1,18 @@
 from jovian.pythondsa import evaluate_test_case
 from jovian.pythondsa import evaluate_test_cases
 
+str = 'Hello ' + 'I am' + '{}' + ' years old'
+if not None:
+    print('Hello')
+print(str.format(12))
+parity = 'odd' if 2%2 != 0 else 'even'
+print('Parity ' + parity)
+a_number = 6
+if a_number % 2 == 0:
+    pass
+elif a_number % 3 == 0:
+    print('{} is divisible by 3 but not divisible by 2'.format(a_number))
+
 tests = []
 # query occurs in the middle
 tests.append({
