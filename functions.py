@@ -7,7 +7,8 @@ def loan_emi(amount, duration, rate=0.05, down_payment=0):
     loan_amount = amount - down_payment
     emi = loan_amount * rate * ((1+rate)**duration) / (((1+rate)**duration)-1)
     return emi
-help(loan_emi)
+
+help(loan_emi) # Prints out the 'docstring' help text in the function
 print(loan_emi(1260000, 8*12, 3e2)) # 3 x 10^2
 print(loan_emi(1260000, 8*12))
 emi1 = loan_emi(
@@ -28,4 +29,6 @@ def division(a, b):
     except ZeroDivisionError:
         print('Division by zero error')
 division(5, 0)
+
+
 
